@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /*/page/
+Disallow: /page/
+Disallow: /wp-
+Disallow: /cgi-bin
+Sitemap: http:///sitemap.xml
+Sitemap: http:///sitemap.xml.gz
