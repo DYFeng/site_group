@@ -1,3 +1,0 @@
-body {background:#BDDBEC url(images/bg_first.gif) center center repeat-y;background-attachment: fixed;}#leftbox{float:left;}#rightbox{float:right;}#centerbox{float:right;}body,td,th,input,select,textarea{color:#444444}a{color:#333333}#rightbox h2{background:url(images/lbar_first.png) top left repeat-x;}#rightbox h2,#rightbox h2 a{color:#000000}#content{background:url(images/content_first.jpg) top left repeat-x;}#footer{background-color:#333333;}#sidebar{background:url(images/tab_first.png) top left repeat-x;}#menu a{color:#a86105 !important}#menu a:hover{color:#ff8f05 !important}#menu .current a,#menu .current a:hover{color:#ff8f05 !important}#header h1 a{color: #237AAE;}
-.ctle{border-bottom:1px dashed #f60;color:#f60}
-.ctle a{color:#f60}
