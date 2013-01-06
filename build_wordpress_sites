@@ -34,12 +34,12 @@ if [ "$1" != "--help" ]; then
 	echo "==========================="
 
 	echo "Please input building jobs number:"
-	read -p "(Default domain: 1):" jobs_number
+	read -p "(Default job number 1):" jobs_number
 	if [ "jobs_number" = "" ]; then
 		jobs_number="1"
 	fi
 	echo "==========================="
-	echo domain="$domain"
+	echo "jobs number=$jobs_number"
 	echo "==========================="
 	#set mysql root password
 
