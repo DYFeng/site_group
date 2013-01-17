@@ -454,6 +454,7 @@ cp conf/php-fpm.conf /usr/local/php/etc/php-fpm.conf
 wget -c http://soft.vpser.net/lnmp/ext/init.d.php-fpm5.2
 cp init.d.php-fpm5.2 /etc/init.d/php-fpm
 chmod +x /etc/init.d/php-fpm
+ln -s /etc/init.d/php-fpm /etc/init.d/phpfpm
 echo "============================php+eaccelerator install completed======================"
 
 echo "============================nginx install================================="
