@@ -386,6 +386,7 @@ make install
 
 mkdir -p /usr/local/php/etc
 cp php.ini-dist /usr/local/php/etc/php.ini
+sed -i 's/scandir,//g' /usr/local/php/etc/php.ini
 cp -f sapi/cli/php /usr/local/php/bin/php-cli
 cd ../
 
