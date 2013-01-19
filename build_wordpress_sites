@@ -549,7 +549,7 @@ echo "============================phpMyAdmin install completed==================
 
 echo "============================add nginx and php-fpm on startup============================"
 echo "Download new nginx init.d file......"
-wget -c http://soft.vpser.net/lnmp/ext/init.d.nginx
+# wget -c http://soft.vpser.net/lnmp/ext/init.d.nginx
 cp init.d.nginx /etc/init.d/nginx
 chmod +x /etc/init.d/nginx
 
