@@ -114,7 +114,7 @@ yum -y remove php-mysql
 
 yum -y install yum-fastestmirror
 yum -y remove httpd
-#yum -y update
+yum -y update
 
 #Disable SeLinux
 if [ -s /etc/selinux/config ]; then
