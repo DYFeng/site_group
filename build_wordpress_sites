@@ -449,6 +449,11 @@ mkdir -p /home/wwwlogs
 chmod 777 /home/wwwlogs
 
 chown -R www:www /home/wwwroot
+
+cp conf/wordpress_config.php /home/wwwroot/
+sed -i "s/here_is_password/$mysqlrootpwd/g" /home/wwwroot/wordpress_config.php
+
+
 rm -f /usr/local/php/etc/php-fpm.conf
 cp conf/php-fpm.conf /usr/local/php/etc/php-fpm.conf
 
