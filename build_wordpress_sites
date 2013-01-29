@@ -327,6 +327,10 @@ useradd -s /sbin/nologin -M -g mysql mysql
 
 cp /usr/local/mysql/share/mysql/my-medium.cnf /etc/my.cnf
 sed -i 's/skip-locking/skip-external-locking/g' /etc/my.cnf
+sed -i 's/log-bin/#log-bin/g' /etc/my.cnf
+sed -i 's/binlog_format/#binlog_format/g' /etc/my.cnf
+
+
 if [ $installinnodb = "y" ]; then
 sed -i 's:#innodb:innodb:g' /etc/my.cnf
 fi
