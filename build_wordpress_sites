@@ -421,6 +421,7 @@ sed -i 's/; cgi.fix_pathinfo=0/cgi.fix_pathinfo=0/g' /usr/local/php/etc/php.ini
 sed -i 's/max_execution_time = 30/max_execution_time = 300/g' /usr/local/php/etc/php.ini
 sed -i 's/disable_functions =.*/disable_functions = passthru,exec,system,chroot,chgrp,chown,shell_exec,proc_open,proc_get_status,ini_alter,ini_alter,ini_restore,dl,pfsockopen,openlog,syslog,readlink,symlink,popepassthru,stream_socket_server,fsocket,fsockopen/g' /usr/local/php/etc/php.ini
 
+
 if [ `getconf WORD_BIT` = '32' ] && [ `getconf LONG_BIT` = '64' ] ; then
         wget -c http://soft.vpser.net/web/zend/ZendOptimizer-3.3.9-linux-glibc23-x86_64.tar.gz
         tar zxvf ZendOptimizer-3.3.9-linux-glibc23-x86_64.tar.gz
@@ -555,7 +556,7 @@ echo "Download new nginx init.d file......"
 # wget -c http://soft.vpser.net/lnmp/ext/init.d.nginx
 cp init.d.nginx /etc/init.d/nginx
 chmod +x /etc/init.d/nginx
-
+chkconfig sendmail on
 chkconfig --level 345 php-fpm on
 chkconfig --level 345 nginx on
 chkconfig --level 345 mysql on
