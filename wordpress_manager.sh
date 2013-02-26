@@ -109,7 +109,8 @@ function print_title {
 function strip_file {
     tmp_file="`mktemp /tmp/super_site.XXXXXX`"
     sed -i 's/^ *//;s/ *$//' $1
-    sed -i 's///g' $1
+    sed -i 's/
+//g' $1
     sed -i '/^$/d' $1
     awk '$1=$1' $1  1> $tmp_file
     mv $tmp_file $1
@@ -614,7 +615,7 @@ EOF
             print_success "$title in $backup_file.gz"
 
             ;;
-
+ 
         "4")
 			title="Super God Mode - Import All Wordpress Sites"
             print_title "$title"
