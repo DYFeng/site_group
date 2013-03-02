@@ -509,7 +509,7 @@ while [ 1 ];do
 $alf
 server
 {
-	listen       $ip;
+	#listen       $ip;
 	server_name *.$domain;
 	index index.html index.htm index.php default.html default.htm default.php;
 
@@ -682,7 +682,7 @@ EOF
 $alf
 server
 {
-	listen       $ip;
+	#listen       $ip;
 	server_name *.$domain;
 	index index.html index.htm index.php default.html default.htm default.php;
 
@@ -913,7 +913,7 @@ EOF
 $alf
 server
 {
-	listen       $ip;
+	#listen       $ip;
 	server_name *.$domain;
 	index index.html index.htm index.php default.html default.htm default.php;
 
