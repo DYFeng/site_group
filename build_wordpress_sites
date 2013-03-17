@@ -505,6 +505,7 @@ cp conf/discuzx.conf /usr/local/nginx/conf/discuzx.conf
 cp conf/none.conf /usr/local/nginx/conf/none.conf
 cp conf/wp2.conf /usr/local/nginx/conf/wp2.conf
 cp conf/phpwind.conf /usr/local/nginx/conf/phpwind.conf
+cp conf/deny.conf /usr/local/nginx/conf/deny.conf
 
 cpu_affinity=""
 for (( i=1;i<=$cpu_num;i++ ));do
