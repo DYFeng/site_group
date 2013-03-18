@@ -754,10 +754,10 @@ EOF
 					create_session session
 					
 					print_job "login $site.$domain"
-					http_post session "http://$site.$domain/wp-login.php" "log=$wp_username&pwd=$wp_password&wp-submit=Log+In&testcookie=1" "-s --connect-timeout 30"
+					http_post session "http://$site.$domain/wp-login.php" "log=$wp_username&pwd=$wp_password&wp-submit=Log+In&testcookie=1" "-s --connect-timeout 180"
 					
 					
-					http_get session "http://$site.$domain/wp-admin/options-general.php?page=google-sitemap-generator%2Fsitemap.php&sm_wpv=3.3.1&sm_pv=3.2.6&sm_rebuild=true&noheader=true&_wpnonce=c1661c3d28" "-s  --connect-timeout 30"
+					http_get session "http://$site.$domain/wp-admin/options-general.php?page=google-sitemap-generator%2Fsitemap.php&sm_wpv=3.3.1&sm_pv=3.2.6&sm_rebuild=true&noheader=true&_wpnonce=c1661c3d28" "-s  --connect-timeout 180"
 					
 # 					http_post session 
 					destory_session session
